@@ -1,0 +1,24 @@
+../gcc-4.8.2/configure \
+--target=$LFS_TGT \
+--prefix=/tools \
+--with-sysroot=$LFS \
+--with-newlib \
+--without-headers \
+--with-local-prefix=/tools \
+--with-native-system-header-dir=/tools/include \
+--disable-nls \
+--disable-shared \
+--disable-multilib \
+--disable-decimal-float \
+--disable-threads \
+--disable-libatomic \
+--disable-libgomp \
+--disable-libitm \
+--disable-libmudflap \
+--disable-libquadmath \
+--disable-libsanitizer \
+--disable-libssp \
+--disable-libstdc++-v3 \
+--enable-languages=c,c++ \
+--with-mpfr-include=$(pwd)/../gcc-4.8.2/mpfr/src \
+--with-mpfr-lib=$(pwd)/mpfr/src/.libs
